@@ -1,0 +1,56 @@
+[
+    {
+        id 209e840976371d2d,
+        type tab,
+        label Flow 1,
+        disabled false,
+        info ,
+        env []
+    },
+    {
+        id 99d33d6d3ad4fce2,
+        type inject,
+        z 209e840976371d2d,
+        name ,
+        props [
+            {
+                p payload
+            },
+            {
+                p topic,
+                vt str
+            }
+        ],
+        repeat ,
+        crontab ,
+        once false,
+        onceDelay 0.1,
+        topic ,
+        payload Hello World,
+        payloadType str,
+        x 330,
+        y 240,
+        wires [
+            [
+                e7f39dc3c1515c51
+            ]
+        ]
+    },
+    {
+        id e7f39dc3c1515c51,
+        type debug,
+        z 209e840976371d2d,
+        name msg.payload,
+        active true,
+        tosidebar false,
+        console true,
+        tostatus false,
+        complete payload,
+        targetType msg,
+        statusVal ,
+        statusType auto,
+        x 720,
+        y 240,
+        wires []
+    }
+]
